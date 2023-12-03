@@ -122,10 +122,10 @@ void main(){
 
     vec3 light_pos = ro;
 
-    float shading = lighting(p, light_pos) - .3;
+    // float shading = lighting(p, light_pos) - .3;
 
-    vec3 col = mix(vec3(0.1333, 0.2314, 0.2157), vec3(0.7216, 0.6627, 0.4627), shading);
-    col = normal(p);
+    // vec3 col = mix(vec3(0.1333, 0.2314, 0.2157), vec3(0.7216, 0.6627, 0.4627), shading);
+    vec3 col = normal(p);
 
     gl_FragColor = vec4(col, 1.);
 }
